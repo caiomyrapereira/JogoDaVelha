@@ -58,10 +58,10 @@ public class Main {
 	    }while( partida<9 && !Venceu(matriz)); 
 		
 	    if(partida<9){
-	       System.out.println("\nO jogador '"+jogador[(partida-1)%2] +"' venceu o jogo.");
+	       System.out.println("O "+jogador[(partida-1)%2] +" venceu o jogo");
 	     }
 	     else{
-	    	System.out.println("\nDeu velha!");
+	    	System.out.println("Deu velha!");
 	     }
 	    
 	}

@@ -3,16 +3,6 @@ package Tabela;
 import java.util.Scanner;
 
 public class Main {
-	static boolean Venceu(String matriz[][]) { 
-		return  (matriz[0][0]).equals(matriz[0][1]) && (matriz[0][0]).equals(matriz[0][2]) ||
-				(matriz[1][0]).equals(matriz[1][1]) && (matriz[1][0]).equals(matriz[1][2]) ||
-				(matriz[2][0]).equals(matriz[2][1]) && (matriz[2][0]).equals(matriz[2][2]) ||
-				(matriz[0][0]).equals(matriz[1][0]) && (matriz[0][0]).equals(matriz[2][0]) ||
-				(matriz[0][1]).equals(matriz[1][1]) && (matriz[0][1]).equals(matriz[2][1]) ||
-				(matriz[0][2]).equals(matriz[1][2]) && (matriz[0][2]).equals(matriz[2][2]) ||
-				(matriz[0][0]).equals(matriz[1][1]) && (matriz[0][0]).equals(matriz[2][2]) ||
-				(matriz[0][2]).equals(matriz[1][1]) && (matriz[0][2]).equals(matriz[2][0]);
-	}
 	
 	public static void Mostrar(String matriz[][]) {
 		for (int i = 0; i < matriz.length; i++) {
@@ -49,20 +39,16 @@ public class Main {
 	    				else {
 	    					matriz[l][c]  = jogador[partida%2];  // jogador
 	    					partida++;		
-	    					break;	
+	    					break;
 	    				}  
 	    			}
 	    		}
 	    	}
 	    	
-	    }while( partida<9 && !Venceu(matriz)); 
+	    	
+	    }while( true ); 
 		
-	    if(partida<9){
-	       System.out.println("\nO jogador '"+jogador[(partida-1)%2] +"' venceu o jogo.");
-	     }
-	     else{
-	    	System.out.println("\nDeu velha!");
-	     }
+		
 	    
 	}
 }
