@@ -25,7 +25,7 @@ public class Main {
 		
 	    do {
 	    	Mostrar(matriz);
-	    	System.out.println(jogador[partida%2]+", digite qual posição deseja:");
+	    	System.out.println(nomes[partida%2]+", digite qual posição deseja:");
 	    	opc = ler.nextInt();
 		    
 	    	cont = 0;
