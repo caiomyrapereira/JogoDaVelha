@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\Usuario\Desktop\Jogo da velha\.metadata\.plugins\org.eclipse.jdt.core
+1289320443.index
