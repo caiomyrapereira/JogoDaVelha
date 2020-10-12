@@ -35,7 +35,7 @@ public class Main {
 		
 	    do {
 	    	Mostrar(matriz);
-	    	System.out.println("\nO jogador '"+jogador[partida%2]+"', digite qual posição deseja:");
+	    	System.out.println("O jogador '"+jogador[partida%2]+"', digite qual posição deseja:");
 	    	opc = ler.nextInt();
 		    
 	    	cont = 0;
@@ -47,7 +47,7 @@ public class Main {
 	    					System.out.println("Já foi escolhido");
 	    				}
 	    				else {
-	    					matriz[l][c]  = jogador[partida%2];
+	    					matriz[l][c]  = jogador[partida%2];  // jogador
 	    					partida++;		
 	    					break;	
 	    				}  
