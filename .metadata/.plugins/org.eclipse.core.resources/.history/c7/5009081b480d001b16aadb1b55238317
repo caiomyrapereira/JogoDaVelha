@@ -16,11 +16,11 @@ public class Main {
 	
 	public static void Mostrar(String matriz[][]) {
 		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
-				System.out.print("["+ matriz[i][j]+"]");
+    		for (int j = 0; j < matriz.length; j++) {
+    			System.out.print("["+ matriz[i][j]+"]");
     		}
-			System.out.println("");
-		}
+    		System.out.println("");
+    	}
 	}
 	
 	public  static void main(String args[]) {
@@ -57,7 +57,7 @@ public class Main {
 	    	
 	    }while( partida<9 && !Venceu(matriz)); 
 
-	    Mostrar(matriz);
+	  	Mostrar(matriz);
 	  	
 	    if(partida<9){
 	       System.out.println("\nO jogador '"+jogador[(partida-1)%2] +"' venceu o jogo.");
